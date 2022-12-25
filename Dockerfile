@@ -6,4 +6,4 @@ RUN npm ci
 COPY --chown=node:node . .
 EXPOSE 3000
 USER node
-CMD [ "./bin/start.sh" ]
+CMD [ "sh", "-c", "./bin/start.sh" ]
